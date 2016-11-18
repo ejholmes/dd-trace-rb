@@ -104,13 +104,5 @@ module Datadog
       @trace_worker.enqueue(trace)
       @service_worker.enqueue(services)
     end
-
-    # stats returns a dictionary of stats about the writer.
-    def stats
-      {
-        traces_flushed: @traces_flushed,
-        traces_buffered: @trace_buffer.length()
-      }
-    end
   end
 end
