@@ -41,3 +41,7 @@ appraise "jruby-rails-4-pg" do
   gem "rails", "4.2.7.1"
   gem 'activerecord-jdbcpostgresql-adapter', platform: :jruby
 end
+
+appraise "elasticsearch-ruby" do
+  gem "elasticsearch-transport"
+end
